@@ -1,7 +1,7 @@
 import { Box, Divider, Link, Center, Image, Text, useBreakpointValue } from '@chakra-ui/react'
 import { MusicResponsive } from '../Components/MusicResponsive.js'
 import { Footer } from '../Components/Footer.js'
-import { images, links, names } from '../data/dataThree.js'
+import { images, links, names } from '../Data/dataThree.js'
 import { Carousel } from '../Components/Carousel.js'
 
 export default function Home() {

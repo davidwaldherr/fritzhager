@@ -1,7 +1,5 @@
-import { Box, Divider, Link, Center, Image, Text, useBreakpointValue, Button } from '@chakra-ui/react'
+import { Box, Divider, Center, Image, Text, useBreakpointValue, Button } from '@chakra-ui/react'
 import { MusicResponsive } from '../Components/MusicResponsive.js'
-import { Footer } from '../Components/Footer.js'
-import { images, links, names } from '../data/dataThree.js'
 
 export default function Home() {
 const showSecondDivider = useBreakpointValue({ base: true, md: false })
