@@ -4,8 +4,9 @@ import 'react-alice-carousel/lib/alice-carousel.css';
 import Item from './Item';
 
 const responsive = {
-  0: { items: 2 },
-  568: { items: 3 },
+  420: { items: 1 },
+  568: { items: 2 },
+  768: { items: 3 },
   900: { items: 4 },
   1024: { items: 5 },
   1280: { items: 6 },
