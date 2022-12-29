@@ -5,7 +5,9 @@ return (
 <Box maxW="225px" minW="200px" H="25">
     <Box w="225px"></Box>
     <Center>
-        <Link href={link} target="_blank"><Image src={image} display="flex" className="first-image" pb="1" /></Link>
+        <Link href={link}>
+            <Image src={image} display="flex" className="first-image" pb="1" />
+        </Link>
     </Center>
 </Box>
 )

@@ -16,7 +16,7 @@ return (
         {!bearMiddle && (
             <Grid templateColumns={`repeat(${columns}, 1fr)`} templateRows={`repeat(${rows}, 1fr)`} gap={4}>
             {data.map((item, index) => (
-            <SingleImageBox key={index} image={item.secondImage} />
+            <SingleImageBox key={index} image={item.secondImage} link={item.link} />
             ))}
             </Grid>
         )}
