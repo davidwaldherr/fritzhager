@@ -3,7 +3,7 @@ import { Box, Center, Image, Link } from "@chakra-ui/react"
 export const TwoImagesBox = ({ firstImage, secondImage, link }) => {
   return (
     <Link href={link}>
-    <Box maxW="225px" minW="90px" maxH="320px" minH="proportional">
+    <Box maxW="200px" minW="90px" maxH="320px" minH="proportional" p="10px">
       <Image 
         src={firstImage} 
         display="flex" 
