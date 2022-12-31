@@ -1,4 +1,4 @@
-import { Box, Divider, Center, useBreakpointValue } from '@chakra-ui/react'
+import { Box, Divider, Center, useBreakpointValue, Image } from '@chakra-ui/react'
 import { ResponsiveGrid } from '../Components/ResponsiveGrid.js'
 import { TwoResponsiveGrid } from '../Components/TwoResponsiveGrid.js'
 import { Footer } from '../Components/Footer.js'
@@ -14,15 +14,16 @@ const showSecondDivider = useBreakpointValue({ base: true, md: false })
           display="flex"
           justifyContent="center"
           alignItems="center"
-          padding="15px"
+          pb="20px"
+          pt="10px"
           backgroundColor="#a8a487"
           position="relative"
         >
-          <img src="../Writing/Fritz.png" alt="Logo" />
+          <Image h="125px" src="../Writing/Fritz.png" alt="Logo" />
         </Box>
 
         {/* Space */}
-        <Box height="50px" backgroundColor="#a8a487" />
+        {/* <Box height="px" backgroundColor="#a8a487" /> */}
 
         {/* Releases */}
         <Releases />
