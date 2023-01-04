@@ -6,6 +6,7 @@ import { Releases } from '../Components/Releases.js'
 
 export default function Home() {
 const showSecondDivider = useBreakpointValue({ base: true, md: false })
+const backgroundColor = "white"
 
   return (
     <>
@@ -16,20 +17,17 @@ const showSecondDivider = useBreakpointValue({ base: true, md: false })
           alignItems="center"
           pb="20px"
           pt="10px"
-          backgroundColor="#a8a487"
+          backgroundColor={backgroundColor}
           position="relative"
         >
           <Image h="125px" src="../Writing/Fritz.png" alt="Logo" />
         </Box>
 
-        {/* Space */}
-        {/* <Box height="px" backgroundColor="#a8a487" /> */}
-
         {/* Releases */}
-        <Releases />
+        <Releases color={backgroundColor} />
 
         {/* Main */}
-        <Box width="100%" position="relative" backgroundColor="#a8a487">
+        <Box width="100%" position="relative" backgroundColor={backgroundColor}>
           <Center>
             <ResponsiveGrid />
           </Center>
@@ -47,7 +45,7 @@ const showSecondDivider = useBreakpointValue({ base: true, md: false })
         </Box>
 
         {/* Footer */}
-        <Footer />
+        <Footer color={backgroundColor}/>
         
     </>
   )

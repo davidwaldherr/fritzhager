@@ -6,14 +6,15 @@ import { Carousel } from '../Components/Carousel.js'
 
 export default function Home() {
 const showSecondDivider = useBreakpointValue({ base: true, md: false })
+const backgroundColor = "white"
 
   return (
     <>
-        <Box height="100vh" width="100vw" backgroundColor="#a8a487" position="absolute" zIndex="-1" >
+        <Box height="100vh" width="100vw" backgroundColor={backgroundColor} position="absolute" zIndex="-1" >
 
         {/* Header */}
-        <Box height="25px" backgroundColor="#a8a487" />
-        <Box width="100%" position="relative" backgroundColor="#a8a487" >
+        <Box height="25px" backgroundColor={backgroundColor} />
+        <Box width="100%" position="relative" backgroundColor={backgroundColor} >
           <Center>
             <MusicResponsive mySRC={"../Bears/fritzLogo.png"} bearMiddle={showSecondDivider}/>
           </Center>
@@ -24,7 +25,7 @@ const showSecondDivider = useBreakpointValue({ base: true, md: false })
 
         {/* MUSIC */}
         <Box 
-          backgroundColor="#a8a487"
+          backgroundColor={backgroundColor}
           position="relative" 
           width='100%' 
           backgroundPosition={"center"}
@@ -38,7 +39,7 @@ const showSecondDivider = useBreakpointValue({ base: true, md: false })
 
         {/* Footer */}
         {showSecondDivider && (
-        <Center backgroundColor="#a8a487">
+        <Center backgroundColor={backgroundColor}>
           <Divider orientation="horizontal" width="70%"  borderColor="black" borderBottomWidth={3} marginTop="4" marginBottom="4" />
         </Center>
         )}  

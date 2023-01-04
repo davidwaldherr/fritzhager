@@ -1,11 +1,11 @@
 import { Stack, useBreakpointValue, Box, Input, Text, Button } from "@chakra-ui/react"
 
-export const Footer = () => {
+export const Footer = (color) => {
   const width = useBreakpointValue({ base: "0%", md: "50%" })
   return (
       <Box
         padding="15px"
-        backgroundColor="#a8a487"
+        backgroundColor={color}
         position="relative"
       >
         <Stack spacing="4" direction={{ base: 'column', md: 'row' }} align="center" justifyContent="center">
@@ -18,7 +18,7 @@ export const Footer = () => {
           <Box position="relative" width={width}></Box>
           <Box
             padding="15px"
-            backgroundColor="#a8a487"
+            backgroundColor={color}
             position="relative"
             align="right"
           >

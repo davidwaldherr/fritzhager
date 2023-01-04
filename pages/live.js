@@ -6,14 +6,15 @@ const showSecondDivider = useBreakpointValue({ base: true, md: false })
 function handleClick() {
     window.open("https://bnds.us/ifj7mw", '_blank');
 }
+const backgroundColor = "#white"
 
   return (
     <>
-        <Box height="100vh" width="100vw" backgroundColor="#a8a487" position="absolute" zIndex="-1" >
+        <Box height="100vh" width="100vw" backgroundColor={backgroundColor} position="absolute" zIndex="-1" >
 
         {/* Header */}
-        <Box height="25px" backgroundColor="#a8a487" />
-        <Box width="100%" position="relative" backgroundColor="#a8a487" >
+        <Box height="25px" backgroundColor={backgroundColor} />
+        <Box width="100%" position="relative" backgroundColor={backgroundColor} >
           <Center>
             <MusicResponsive mySRC={"../Bears/3.png"} bearMiddle={showSecondDivider}/>
           </Center>
@@ -24,7 +25,7 @@ function handleClick() {
 
         {/* MUSIC */}
         <Box 
-          backgroundColor="#a8a487"
+          backgroundColor={backgroundColor}
           position="relative" 
           width='100%' 
           backgroundPosition={"center"}
@@ -45,7 +46,7 @@ function handleClick() {
 
         {/* Footer */}
         {showSecondDivider && (
-        <Center backgroundColor="#a8a487">
+        <Center backgroundColor={backgroundColor}>
           <Divider orientation="horizontal" width="70%"  borderColor="black" borderBottomWidth={3} marginTop="4" marginBottom="4" />
         </Center>
         )}  
