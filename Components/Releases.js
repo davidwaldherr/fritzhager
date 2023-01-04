@@ -9,7 +9,7 @@ const displayBaseCase = useBreakpointValue({ base: true, md: false })
             <Box width="100%" position="relative" backgroundColor={color} pb="8">
                 <Center>
                     <Box maxW="300px" width="95%" position="relative" backgroundColor={color} pb="5">
-                        <Link href="https://ffm.to/carolinefh" target="_blank"><Image src="../Caroline20.png" alt="Caroline" className="first-image"/></Link>
+                        <Link href="https://ffm.to/carolinefh" target="_blank"><Image src="../caroline20.png" alt="Caroline" className="first-image"/></Link>
                     </Box>
                 </Center>
                 <Box width="100%" position="relative" backgroundColor={color} display="flex" justifyContent="center">
@@ -31,7 +31,7 @@ const displayBaseCase = useBreakpointValue({ base: true, md: false })
             </Box>
             <Center>
                 <Box maxW="450px" width="80%" position="relative" backgroundColor={color} pb="5">
-                    <Link href="https://ffm.to/carolinefh" target="_blank"><Image src="../Caroline20.png" alt="Caroline" className="first-image"/></Link>
+                    <Link href="https://ffm.to/carolinefh" target="_blank"><Image src="../caroline20.png" alt="Caroline" className="first-image"/></Link>
                 </Box>
             </Center>
             <Box top="80px" className="first-image" maxW="200px" maxH="100px" width="42%" position="relative" backgroundColor="white" border="3px solid black" padding="5px" textAlign="center" display="flex" alignItems="center" justifyContent="center">
