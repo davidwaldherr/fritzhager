@@ -1,16 +1,19 @@
 import { Box, Divider, Center, Image, Text, useBreakpointValue, Button } from '@chakra-ui/react'
 import { MusicResponsive } from '../Components/MusicResponsive.js'
+import BandsInTownWidget from '../Components/BandsInTownWidget.js'
 
 export default function Home() {
-const showSecondDivider = useBreakpointValue({ base: true, md: false })
-function handleClick() {
+  const showSecondDivider = useBreakpointValue({ base: true, md: false })
+
+  function handleClick() {
     window.open("https://bnds.us/ifj7mw", '_blank');
-}
-const backgroundColor = "#white"
+  }
+
+  const backgroundColor = "#white"
 
   return (
     <>
-        <Box height="100vh" width="100vw" backgroundColor={backgroundColor} position="absolute" zIndex="-1" >
+      <Box height="100vh" width="100vw" backgroundColor={backgroundColor} position="absolute" zIndex="-1" >
 
         {/* Header */}
         <Box height="25px" backgroundColor={backgroundColor} />
@@ -34,31 +37,32 @@ const backgroundColor = "#white"
           <Center pb="10">
             <Image src="../Writing/Live2.png" alt="Album Cover" h="45" />
           </Center>
-            <Text fontSize="xl" textAlign="center" color="black" fontWeight="bold" pb="10">GET NOTIFIED WHEN EVENTS ARE IN YOUR AREA</Text>
-            <Center>
-            <Button onClick={handleClick} border="2px" borderColor="black" borderRadius="0" variant="solid" size="sm" fontWeight="bold" fontSize="15" color="black" _hover={{ bg: "lightblue" }}>
-                FOLLOW FRITZ HAGER
-            </Button>
-            </Center>
-            
-            
+          
         </Box>
+
+        {/* BandsInTown Widget */}
+        <Center>
+          <Box width="60vw" backgroundColor={backgroundColor}>
+            <BandsInTownWidget artistName="fritz hager" />
+          </Box>
+        </Center>
+        
 
         {/* Footer */}
         {showSecondDivider && (
-        <Center backgroundColor={backgroundColor}>
-          <Divider orientation="horizontal" width="70%"  borderColor="black" borderBottomWidth={3} marginTop="4" marginBottom="4" />
-        </Center>
+          <Center backgroundColor={backgroundColor}>
+            <Divider orientation="horizontal" width="70%"  borderColor="black" borderBottomWidth={3} marginTop="4" marginBottom="4" />
+          </Center>
         )}  
         <Center>
-        <Center position="absolute" bottom={3}>
+          <Center position="absolute" bottom={3}>
             <Text fontSize="sm" color="subtle">
-                &copy; {new Date().getFullYear()} 19 Recordings, Inc. All rights reserved.
+              &copy; {new Date().getFullYear()} 19 Recordings, Inc. All rights reserved.
             </Text>
-        </Center>
+          </Center>
         </Center>
         
-        </Box>
+      </Box>
     </>
   )
 }
