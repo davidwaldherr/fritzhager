@@ -14,11 +14,11 @@ const displayBaseCase = useBreakpointValue({ base: true, md: false })
                 </Center>
                 <Box width="100%" position="relative" backgroundColor={color} display="flex" justifyContent="center">
                 <Box className="first-image" maxW="250px" width="42%" position="relative" backgroundColor="white" border="3px solid black" padding="5px" textAlign="center" display="flex" alignItems="center" justifyContent="center">
-                    <Link href="https://smithmusic.ffm.to/662582270426_frtizhager" target="_blank"><Text fontWeight="bold" fontSize="20" color="black" >LISTEN TO THE NEW ALBUM</Text></Link>
+                    <Link href="https://ffm.to/twostep" target="_blank"><Text fontWeight="bold" fontSize="20" color="black" >LISTEN TO THE NEW SINGLE</Text></Link>
                 </Box>
                 <Box width="30px" />
                 <Box className="first-image" maxW="250px" width="42%" position="relative" backgroundColor="white" border="3px solid black" padding="5px" textAlign="center" display="flex" alignItems="center" justifyContent="center">
-                    <Link href="https://www.youtube.com/watch?v=-kRX-SNJdSU" target="_blank"><Text fontWeight="bold" fontSize="20" color="black">WATCH THE LATEST VIDEO</Text></Link>
+                    <Link href="https://youtu.be/2keHpD_H7KM" target="_blank"><Text fontWeight="bold" fontSize="20" color="black">WATCH THE LATEST VIDEO</Text></Link>
                 </Box>
                 </Box>
             </Box>
@@ -27,7 +27,7 @@ const displayBaseCase = useBreakpointValue({ base: true, md: false })
             <Box width="100%" position="relative" backgroundColor={color} pb="8">
             <Box width="100%" position="relative" backgroundColor={color} display="flex" justifyContent="center">
             <Box top="80px" className="first-image" maxW="200px" maxH="100px" width="42%" position="relative" backgroundColor="white" border="3px solid black" padding="5px" textAlign="center" display="flex" alignItems="center" justifyContent="center">
-                <Link href="https://smithmusic.ffm.to/662582270426_frtizhager" target="_blank"><Text fontWeight="bold" fontSize="20" color="black" >LISTEN TO THE NEW ALBUM</Text></Link>
+                <Link href="https://ffm.to/twostep" target="_blank"><Text fontWeight="bold" fontSize="20" color="black" >LISTEN TO THE NEW SINGLE</Text></Link>
             </Box>
             <Center>
                 <Box maxW="450px" width="80%" position="relative" backgroundColor={color} pb="5">
@@ -35,7 +35,7 @@ const displayBaseCase = useBreakpointValue({ base: true, md: false })
                 </Box>
             </Center>
             <Box top="80px" className="first-image" maxW="200px" maxH="100px" width="42%" position="relative" backgroundColor="white" border="3px solid black" padding="5px" textAlign="center" display="flex" alignItems="center" justifyContent="center">
-                <Link href="https://www.youtube.com/watch?v=-kRX-SNJdSU" target="_blank"><Text fontWeight="bold" fontSize="20" color="black">WATCH THE LATEST VIDEO</Text></Link>
+                <Link href="https://youtu.be/2keHpD_H7KM" target="_blank"><Text fontWeight="bold" fontSize="20" color="black">WATCH THE LATEST VIDEO</Text></Link>
             </Box>
             </Box>
         </Box>
